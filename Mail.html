@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mail</title>
+</head>
+<style>
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    margin: 0;
+    background-color: rgb(223, 223, 223);
+}
+header 
+{
+    display: flex;
+    align-items: center;
+    background-color: rgb(223, 223, 223);
+    color: black;
+    padding: 20px;
+}
+header h1, header p 
+{
+    margin: 0;
+}
+header img 
+{
+    margin-right: 10px;
+    width: 5%;
+}
+.sidebar 
+{
+    width: 250px;
+    height: 100%;
+    background-color: rgb(223, 223, 223);
+    position: fixed;
+    top: 1;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidebar img 
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.sidebar a 
+{
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+.sidebar a:hover 
+{
+    background-color: #ffe3e3;
+}
+.sidebar .menu-item 
+{
+    display: flex;
+    align-items: center;
+}
+.email 
+{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 15%;
+    border-bottom: 1px solid #ccc;
+}
+.favorite 
+{
+    margin-right: 0;
+}
+.email-subject 
+{
+    color: black;
+}
+.email-content 
+{
+    color: gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    flex-grow: 1;
+}
+.sender-info 
+{
+    display: flex;
+    align-items: center;
+}
+.sender-info img 
+{
+    margin-left: auto;
+}
+.sender-info p, .sender-info h3 
+{
+    margin: 5px 0;
+}
+</style>
+<body>
+    <header>
+        <img src="./icons_hw/mail.png" alt="mail.png">
+        <h1>MY MAIL</h1>
+        <p style="text-align: right;">user@mymail.com</p>
+        <img src="./icons_hw/account.png" alt="user.png" style="text-align: right; width: 5%;">
+    </header>
+    <hr>
+    <div class="sidebar" style="font-size: larger;">
+        <div class="menu-item">
+            <img src="./icons_hw/incom.png" alt="Incoming.png">
+            <a href="#">Incoming</a>
+        </div>
+        <div class="menu-item">
+            <img src="./icons_hw/outcom.png" alt="Outgoing.png">
+            <a href="#">Outgoing</a>
+        </div>
+        <div class="menu-item">
+            <img src="./icons_hw/draft.png" alt="Drafts.png">
+            <a href="#">Drafts</a>
+        </div>
+        <div class="menu-item">
+            <img src="./icons_hw/spam.png" alt="Spam.png">
+            <a href="#">Spam</a>
+        </div>
+    </div>
+    <div class="email">
+        <div class="favorite">
+            <img style="width: 5%;" src="./icons_hw/star1.svg" alt="Fav.png">
+        </div>
+        <div class="sender-info" style="margin-left: -450px;">
+            <p style="margin-right: 200px;">me, Alex </p>
+            <h3 style="margin-right: 10px;"> Trip to South America </h3>
+            <p style="color: gray; margin-right: 10px;"> - Suspendisse ut sapien non arcu rutum t... </p>
+            <img style="margin-right: 10px;" src="./icons_hw/attach_26.png" alt="File.png">
+            <p style="margin-right: 10px;">12 apr.</p>
+        </div>    
+    </div>
+    <div class="email">
+        <div class="favorite">
+            <img style="width: 5%;" src="./icons_hw/star1.svg" alt="Fav.png">
+        </div>
+        <div class="sender-info" style="margin-left: -450px;">
+            <p style="margin-right: 200px;">me, John </p>
+            <h3 style="margin-right: 10px;"> Santa Monica trip </h3>
+            <p style="color: gray; margin-right: 10px;"> - Cras accusman lacus quis urna ultricies, vel fi... </p>
+            <img style="margin-right: 10px;" src="./icons_hw/attach_26.png" alt="File.png">
+            <p style="margin-right: 10px;">12 apr.</p>
+        </div>    
+    </div>
+    <div class="email">
+        <div class="favorite">
+            <img style="width: 5%;" src="./icons_hw/star1.svg" alt="Fav.png">
+        </div>
+        <div class="sender-info" style="margin-left: -450px;">
+            <p style="margin-right: 200px;">me, John, Alex </p>
+            <h3 style="margin-right: 10px;"> Birthday party </h3>
+            <p style="color: gray; margin-right: 10px;"> - 20.04.2019 </p>
+            <p style="margin-right: 10px;">11 apr.</p>
+        </div>    
+    </div>
+    <div class="email">
+        <div class="favorite">
+            <img style="width: 5%;" src="./icons_hw/star2.svg" alt="Fav.png">
+        </div>
+        <div class="sender-info" style="margin-left: -450px;">
+            <p style="margin-right: 200px;">mari White </p>
+            <h3 style="margin-right: 10px;"> Report (march 2019) </h3>
+            <img style="margin-right: 10px;" src="./icons_hw/attach_26.png" alt="File.png">
+            <p style="margin-right: 10px;">10 apr.</p>
+        </div>    
+    </div>
+    <div class="email">
+        <div class="favorite">
+            <img style="width: 5%;" src="./icons_hw/star1.svg" alt="Fav.png">
+        </div>
+        <div class="sender-info" style="margin-left: -450px;">
+            <p style="margin-right: 200px;">me, Elena </p>
+            <h3 style="margin-right: 10px;"> Duis semper augue </h3>
+            <p style="color: gray; margin-right: 10px;"> - Nunc finibus sem odio mattis... </p>
+            <img style="margin-right: 10px;" src="./icons_hw/attach_26.png" alt="File.png">
+            <p style="margin-right: 10px;">10 apr.</p>
+        </div>    
+    </div>
+    <div class="email">
+        <div class="favorite">
+            <img style="width: 5%;" src="./icons_hw/star1.svg" alt="Fav.png">
+        </div>
+        <div class="sender-info" style="margin-left: -450px;">
+            <p style="margin-right: 200px;">Bill, John </p>
+            <h3 style="margin-right: 10px;"> Ut congue purus </h3>
+            <p style="color: gray; margin-right: 10px;"> - Ut sit amet eros hendrerit, posuere arcu sed, v... </p>
+            <p style="margin-right: 10px;">5 apr.</p>
+        </div>    
+    </div>
+    <div class="email">
+        <div class="favorite">
+            <img style="width: 5%;" src="./icons_hw/star2.svg" alt="Fav.png">
+        </div>
+        <div class="sender-info" style="margin-left: -450px;">
+            <p style="margin-right: 200px;">Stive </p>
+            <h3 style="margin-right: 10px;"> Phasellus quis velit tincidunt </h3>
+            <p style="margin-right: 10px;">1 apr.</p>
+        </div>    
+    </div>
+    <div class="email">
+        <div class="favorite">
+            <img style="width: 5%;" src="./icons_hw/star2.svg" alt="Fav.png">
+        </div>
+        <div class="sender-info" style="margin-left: -450px;">
+            <p style="margin-right: 200px;">Mari White </p>
+            <h3 style="margin-right: 10px;"> Report (february 2019) </h3>
+            <img style="margin-right: 10px;" src="./icons_hw/attach_26.png" alt="File.png">
+            <p style="margin-right: 10px;">10 apr.</p>
+        </div>    
+    </div>
+</body>
+</html>
